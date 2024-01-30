@@ -49,6 +49,7 @@
   .header {
     top: initial;
     bottom: 0;
+    padding: 0;
   }
   .nav {
     height: var(--header-height);
