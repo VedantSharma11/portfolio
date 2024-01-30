@@ -1,0 +1,74 @@
+.container1{
+  margin-left: auto;
+  margin-right: auto;
+}
+.skills__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 3rem;
+}
+.skills__content {
+  background-color: var(--container-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1.5rem 2rem;
+  border-radius: 1.25rem;
+}
+.skills__content:hover{
+  transform: scale(1.04);
+  box-shadow: rgba(0, 0, 0, 0.08) 0px 4px 12px;
+  transition: 0.2s;
+}
+.skills__title {
+  text-decoration: underline;
+  font-size: 1.1rem;
+  font-weight:bold;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.skills__box {
+  display: flex;
+  justify-content: center;
+  column-gap: 2rem;
+}
+.skills__group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.skills__data {
+  display: flex;
+  column-gap: 0.5rem;
+}
+.skills .bx-badge-check {
+  font-size: 1rem;
+  color: var(--title-color);
+}
+.skills__name {
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  line-height: 18px;
+}
+.skills__level {
+  font-size: 0.8rem;
+}
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 880px) {
+  .skills__content {
+    width: 450px;
+  }
+}
+
+/* For medium devices */
+@media screen and (max-width: 530px) {
+  .skills__content {
+    width: 100%;
+  }
+  .skills__container{
+    padding: 0 1rem;
+  }
+}
+
