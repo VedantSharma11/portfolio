@@ -43,8 +43,8 @@ function Backend() {
           <div className="skills__data">
           <PiSealCheckFill/>
             <div>
-              <h3 className="skills__name">ghgh</h3>
-              <span className="skills__level">Intermediate</span>
+              <h3 className="skills__name">WebSockets</h3>
+              <span className="skills__level">Basic</span>
             </div>
           </div>
           <div className="skills__data">
