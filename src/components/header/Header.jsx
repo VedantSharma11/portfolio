@@ -1,5 +1,12 @@
 import React, { useState } from "react";
 import "./header.css";
+import { FiGrid } from "react-icons/fi";
+import { IoCloseSharp } from "react-icons/io5";
+import { BiHomeAlt } from "react-icons/bi";
+import { IoPersonOutline } from "react-icons/io5";
+import { FiFileText } from "react-icons/fi";
+import { TbPhoto } from "react-icons/tb";
+import { LuContact2 } from "react-icons/lu";
 
 function Header() {
   /*====== ======= Change Background Header ======= */
@@ -29,7 +36,7 @@ function Header() {
                   activeNav === "#home" ? "nav__link active-link" : "nav__link"
                 }
               >
-                <i className="uil uil-estate nav__icon"></i>Home
+                <BiHomeAlt fontSize={20} className="nav__icon"/>Home
               </a>
             </li>
             <li className="nav__item">
@@ -40,7 +47,7 @@ function Header() {
                   activeNav === "#about" ? "nav__link active-link" : "nav__link"
                 }
               >
-                <i className="uil uil-user nav__icon"></i>About
+                <IoPersonOutline fontSize={20} className="nav__icon"/>About
               </a>
             </li>
             <li className="nav__item">
@@ -53,7 +60,7 @@ function Header() {
                     : "nav__link"
                 }
               >
-                <i className="uil uil-file-alt nav__icon"></i>Skills
+                <FiFileText fontSize={20} className="nav__icon"/>Skills
               </a>
             </li>
             <li className="nav__item">
@@ -66,7 +73,7 @@ function Header() {
                     : "nav__link"
                 }
               >
-                <i className="uil uil-scenery nav__icon"></i>Portfolio
+                <TbPhoto fontSize={20} className="nav__icon"/>Portfolio
               </a>
             </li>
             <li className="nav__item">
@@ -79,19 +86,17 @@ function Header() {
                     : "nav__link"
                 }
               >
-                <i className="uil uil-message nav__icon"></i>Contact
+                <LuContact2 fontSize={20} className="nav__icon"/>Contact
               </a>
             </li>
           </ul>
 
-          <i
-            className="uil uil-times nav__close"
-            onClick={() => showMenu(!Toggle)}
-          ></i>
+          <IoCloseSharp fontSize={20} className="nav__close" onClick={() => showMenu(!Toggle)}/>
+    
         </div>
 
         {!Toggle && <div className="nav__toggle" onClick={() => showMenu(!Toggle)}>
-          <i className="uil uil-apps"></i>
+          <FiGrid/>
         </div>}
 
       </nav>

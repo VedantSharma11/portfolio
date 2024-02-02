@@ -1,7 +1,8 @@
 import React from "react";
 import "./scrollup.css";
-const ScrollUp = () => {
+import { IoMdArrowRoundUp } from "react-icons/io";
 
+const ScrollUp = () => {
   window.addEventListener("scroll", function () {
     
     const scrollUp = document.querySelector(".scrollup");
@@ -11,7 +12,7 @@ const ScrollUp = () => {
 
   return (
     <a href="#" className="scrollup">
-      <i className="uil uil-arrow-up scrollup_icon"></i>
+      <IoMdArrowRoundUp fontSize={20} className="scrollup-ico"/>
     </a>
   );
 };
